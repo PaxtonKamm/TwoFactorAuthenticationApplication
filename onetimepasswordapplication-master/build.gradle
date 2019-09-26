@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+sourceSets.main.java.srcDirs = ['src']
+
+mainClassName = 'com/ytel/example/OneTimePasswordApplication'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile "joda-time:joda-time:2.2"
+    implementation 'com.google.code.gson:gson:2.7'
+}
